@@ -137,10 +137,10 @@ gantt.directive('gantt', ['Gantt', 'dateFunctions', 'mouseOffset', 'debounce', '
             });
 
             $scope.$watch("data", function (newValue, oldValue) {
-                if (!angular.equals(newValue, oldValue)) {
+                //if (!angular.equals(newValue, oldValue)) {
                     $scope.removeAllData();
                     $scope.setData(newValue);
-                }
+                //}
             });
 
             $scope.getPxToEmFactor = function() {
